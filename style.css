@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  justify-content: center;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: line-through;
+}
+
+/* Apply Source Code Pro font to all HTML content */
+body, p, h1, h2, h3, a, button {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Set background image for the entire page */
+body {
+  
+  background-image: url(BackgroundGIF.gif);
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center the background image */
+}
+
+#button-container button {
+  font-family: 'Source Code Pro', monospace;
+}

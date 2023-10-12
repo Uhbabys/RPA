@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.description {
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px auto;
+    white-space: pre-line;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.flame-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid red;
+    animation: flame 3s infinite;
+    z-index: -1; /* Place it behind the image */
+}
+
+@keyframes flame {
+    0% {
+        box-shadow: 0 0 10px 2px red, 0 0 20px 5px orange, 0 0 30px 5px yellow;
+    }
+    50% {
+        box-shadow: 0 0 10px 2px red, 0 0 20px 5px orange, 0 0 30px 5px yellow;
+        opacity: 0.5;
+    }
+    100% {
+        box-shadow: 0 0 10px 2px red, 0 0 20px 5px orange, 0 0 30px 5px yellow;
+    }
+}

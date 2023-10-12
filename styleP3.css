@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('ADEDBackground.jpeg');
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    font-size: 48px;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+.image-frame {
+    overflow: hidden;
+    width: 900px;
+    height: 600px;
+    border: 2px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-text {
+    background-color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    padding: 20px;
+    font-size: 25px;
+}
